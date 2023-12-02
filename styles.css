@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Vina+Sans&display=swap');
+
+
+body {
+    font-family: 'Nova Square', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #e6adad;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+      color: #add8e6;
+    }
+  }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+main {
+    padding: 20px;
+}
+
+section p {
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+
+/* Styles pour réduire l'écart entre les images dans l'index */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Utilisez space-around pour un espacement équilibré */
+    margin-bottom: 10px;
+}
+
+
+.car-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.car-item a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.car-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+/* Ajout de styles spécifiques pour la mise en page des images */
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.car-item {
+    width: 500px; /* Ajustez la largeur et l'écart selon vos préférences */
+    min-width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.car-item a {
+    text-decoration: none; /* Supprimer le soulignement du lien */
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 8px; /* Ajouter des coins arrondis aux images si souhaité */
+}
+
+.car-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Sections avec des règles d'opacité et de transformation */
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* Rétablir l'opacité initiale */
+    transform: translateY(0); /* Rétablir la position initiale */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+/* Ajout de styles spécifiques pour la mise en page des images et du texte dans la page modèles */
+#honda_s360,
+#toyota_land_cruiser,
+#nissan_skyline,
+#mazda_mx5,
+#toyota_supra,
+#Datsun_Fairlady,
+#Lexus_IS,
+#Supra_Hycade,
+#nissan_leaf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Ajoutez un espace entre chaque section */
+}
+
+@media only screen and( width: 900px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#honda_s360 img,
+#toyota_land_cruiser img,
+#nissan_skyline img,
+#mazda_mx5 img,
+#toyota_supra img,
+#Datsun_Fairlady img,
+#Lexus_IS img,
+#Supra_Hycade img,
+#nissan_leaf img {
+    width: 50%; /* Ajustez la largeur de l'image selon vos besoins */
+    border-radius: 8px;
+    margin-right: 20px; /* Ajoutez un espace entre l'image et le texte */
+}
+
+
+
+#honda_s360 p,
+#toyota_land_cruiser p,
+#nissan_skyline p,
+#mazda_mx5 p,
+#toyota_supra p,
+#Datsun_Fairlady p,
+#Lexus_IS p,
+#Supra_Hycade p,
+#nissan_leaf p {
+    width: 50%; /* Ajustez la largeur du texte selon vos besoins */
+
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+/* Animation pour le titre du header */
+header h1 {
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Ajout de styles pour le formulaire */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
